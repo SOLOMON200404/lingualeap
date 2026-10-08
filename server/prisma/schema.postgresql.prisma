@@ -1,0 +1,130 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  directUrl = env("DIRECT_URL")
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id             String          @id @default(cuid())
+  email          String          @unique
+  emailVerified  Boolean         @default(false)
+  passwordHash   String?
+  name           String
+  createdAt      DateTime        @default(now())
+  xp             Int             @default(0)
+  streak         Int             @default(0)
+  lastActive     DateTime?
+  dailyGoal      Int             @default(20)
+  hearts         Int             @default(5)
+  heartsUpdatedAt DateTime        @default(now())
+  enrollments    Enrollment[]
+  progress       LessonProgress[]
+  mistakes       MistakeLog[]
+  badges         UserBadge[]
+}
+
+model EmailOtp {
+  id        String   @id @default(cuid())
+  email     String
+  purpose   String
+  codeHash  String
+  attempts  Int      @default(0)
+  expiresAt DateTime
+  createdAt DateTime @default(now())
+  @@index([email, purpose, createdAt])
+}
+
+model Course {
+  id          String       @id @default(cuid())
+  language    String       @unique
+  code        String
+  units       Unit[]
+  enrollments Enrollment[]
+}
+
+model Unit {
+  id       String   @id @default(cuid())
+  title    String
+  order    Int
+  courseId String
+  course   Course   @relation(fields: [courseId], references: [id], onDelete: Cascade)
+  lessons  Lesson[]
+  @@unique([courseId, order])
+}
+
+model Lesson {
+  id        String          @id @default(cuid())
+  title     String
+  order     Int
+  unitId    String
+  unit      Unit            @relation(fields: [unitId], references: [id], onDelete: Cascade)
+  exercises Exercise[]
+  progress  LessonProgress[]
+  @@unique([unitId, order])
+}
+
+model Exercise {
+  id        String @id @default(cuid())
+  type      String
+  prompt    String
+  answer    String
+  options   String
+  audioText String?
+  order     Int
+  lessonId  String
+  lesson    Lesson @relation(fields: [lessonId], references: [id], onDelete: Cascade)
+}
+
+model Enrollment {
+  id        String   @id @default(cuid())
+  userId    String
+  courseId  String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  course    Course   @relation(fields: [courseId], references: [id], onDelete: Cascade)
+  createdAt DateTime @default(now())
+  @@unique([userId, courseId])
+}
+
+model LessonProgress {
+  id          String    @id @default(cuid())
+  userId      String
+  lessonId    String
+  completed   Boolean   @default(false)
+  accuracy    Float     @default(0)
+  xpEarned    Int       @default(0)
+  completedAt DateTime?
+  user        User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  lesson      Lesson    @relation(fields: [lessonId], references: [id], onDelete: Cascade)
+  @@unique([userId, lessonId])
+}
+
+model MistakeLog {
+  id         String   @id @default(cuid())
+  userId     String
+  exerciseId String
+  createdAt  DateTime @default(now())
+  user       User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  @@index([userId, exerciseId])
+}
+
+model Badge {
+  id          String      @id @default(cuid())
+  code        String      @unique
+  name        String
+  description String
+  users       UserBadge[]
+}
+
+model UserBadge {
+  id       String   @id @default(cuid())
+  userId   String
+  badgeId  String
+  earnedAt DateTime @default(now())
+  user     User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  badge    Badge    @relation(fields: [badgeId], references: [id], onDelete: Cascade)
+  @@unique([userId, badgeId])
+}
