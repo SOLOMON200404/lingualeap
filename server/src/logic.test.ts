@@ -1,0 +1,3 @@
+import {describe,it,expect} from 'vitest';import {isCorrect,nextStreak} from './logic.js';
+describe('answer checking',()=>{it('ignores whitespace and case',()=>expect(isCorrect('Hello',' hello ')).toBe(true));it('rejects other answers',()=>expect(isCorrect('hola','adios')).toBe(false))});
+describe('daily streak',()=>{const d=(n:number)=>new Date(2026,0,n,12);it('starts at one',()=>expect(nextStreak(0,null,d(1))).toBe(1));it('keeps same-day streak',()=>expect(nextStreak(4,d(1),d(1))).toBe(4));it('increments consecutive day',()=>expect(nextStreak(4,d(1),d(2))).toBe(5));it('resets after a gap',()=>expect(nextStreak(4,d(1),d(3))).toBe(1))});
