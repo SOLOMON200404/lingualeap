@@ -24,6 +24,7 @@ model User {
   progress       LessonProgress[]
   mistakes       MistakeLog[]
   badges         UserBadge[]
+  pet            Pet?
 }
 
 model EmailOtp {
@@ -126,4 +127,19 @@ model UserBadge {
   user     User     @relation(fields: [userId], references: [id], onDelete: Cascade)
   badge    Badge    @relation(fields: [badgeId], references: [id], onDelete: Cascade)
   @@unique([userId, badgeId])
+}
+
+model Pet {
+  id        String   @id @default(cuid())
+  userId    String   @unique
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  name      String   @default("Pip")
+  level     Int      @default(1)
+  xp        Int      @default(0)
+  berries   Int      @default(0)
+  happiness Int      @default(65)
+  color     String   @default("amber")
+  accessory String   @default("none")
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
 }

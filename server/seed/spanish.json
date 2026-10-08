@@ -1,1 +1,381 @@
-{"language":"Spanish","code":"es-ES","units":[{"title":"Basics","words":[["uno","","one"],["dos","","two"],["tres","","three"],["cuatro","","four"],["cinco","","five"],["seis","","six"],["siete","","seven"],["ocho","","eight"]]},{"title":"Greetings","words":[["hola","","hello"],["gracias","","thank you"],["sí","","yes"],["no","","no"],["por favor","","please"],["perdón","","sorry"],["buenos días","","good morning"],["adiós","","goodbye"]]},{"title":"Food","words":[["agua","","water"],["arroz","","rice"],["leche","","milk"],["té","","tea"],["café","","coffee"],["pan","","bread"],["manzana","","apple"],["comida","","food"]]}]}
+{
+  "language": "Spanish",
+  "code": "es-ES",
+  "units": [
+    {
+      "title": "Basics",
+      "words": [
+        [
+          "uno",
+          "",
+          "one"
+        ],
+        [
+          "dos",
+          "",
+          "two"
+        ],
+        [
+          "tres",
+          "",
+          "three"
+        ],
+        [
+          "cuatro",
+          "",
+          "four"
+        ],
+        [
+          "cinco",
+          "",
+          "five"
+        ],
+        [
+          "seis",
+          "",
+          "six"
+        ],
+        [
+          "siete",
+          "",
+          "seven"
+        ],
+        [
+          "ocho",
+          "",
+          "eight"
+        ],
+        [
+          "nueve",
+          "",
+          "nine"
+        ],
+        [
+          "diez",
+          "",
+          "ten"
+        ],
+        [
+          "once",
+          "",
+          "eleven"
+        ],
+        [
+          "doce",
+          "",
+          "twelve"
+        ],
+        [
+          "trece",
+          "",
+          "thirteen"
+        ],
+        [
+          "catorce",
+          "",
+          "fourteen"
+        ],
+        [
+          "quince",
+          "",
+          "fifteen"
+        ],
+        [
+          "dieciséis",
+          "",
+          "sixteen"
+        ],
+        [
+          "diecisiete",
+          "",
+          "seventeen"
+        ],
+        [
+          "dieciocho",
+          "",
+          "eighteen"
+        ],
+        [
+          "diecinueve",
+          "",
+          "nineteen"
+        ],
+        [
+          "veinte",
+          "",
+          "twenty"
+        ],
+        [
+          "veintiuno",
+          "",
+          "twenty-one"
+        ],
+        [
+          "veintidós",
+          "",
+          "twenty-two"
+        ],
+        [
+          "veintitrés",
+          "",
+          "twenty-three"
+        ],
+        [
+          "veinticuatro",
+          "",
+          "twenty-four"
+        ]
+      ]
+    },
+    {
+      "title": "Greetings",
+      "words": [
+        [
+          "hola",
+          "",
+          "hello"
+        ],
+        [
+          "gracias",
+          "",
+          "thank you"
+        ],
+        [
+          "sí",
+          "",
+          "yes"
+        ],
+        [
+          "no",
+          "",
+          "no"
+        ],
+        [
+          "por favor",
+          "",
+          "please"
+        ],
+        [
+          "perdón",
+          "",
+          "sorry"
+        ],
+        [
+          "buenos días",
+          "",
+          "good morning"
+        ],
+        [
+          "adiós",
+          "",
+          "goodbye"
+        ],
+        [
+          "¿Cómo estás?",
+          "",
+          "how are you?"
+        ],
+        [
+          "Estoy bien",
+          "",
+          "I am well"
+        ],
+        [
+          "¿Cómo te llamas?",
+          "",
+          "what is your name?"
+        ],
+        [
+          "Me llamo ...",
+          "",
+          "my name is"
+        ],
+        [
+          "Mucho gusto",
+          "",
+          "nice to meet you"
+        ],
+        [
+          "¿De dónde eres?",
+          "",
+          "where are you from?"
+        ],
+        [
+          "Buenas tardes",
+          "",
+          "good evening"
+        ],
+        [
+          "Bienvenido",
+          "",
+          "welcome"
+        ],
+        [
+          "Hasta luego",
+          "",
+          "see you again"
+        ],
+        [
+          "Ayúdame, por favor",
+          "",
+          "please help me"
+        ],
+        [
+          "Habla despacio, por favor",
+          "",
+          "speak slowly"
+        ],
+        [
+          "No entiendo",
+          "",
+          "I do not understand"
+        ],
+        [
+          "¿Hablas inglés?",
+          "",
+          "do you speak English?"
+        ],
+        [
+          "Hablo un poco",
+          "",
+          "I know a little"
+        ],
+        [
+          "Hasta mañana",
+          "",
+          "see you tomorrow"
+        ],
+        [
+          "Que tengas un buen día",
+          "",
+          "have a nice day"
+        ]
+      ]
+    },
+    {
+      "title": "Food",
+      "words": [
+        [
+          "agua",
+          "",
+          "water"
+        ],
+        [
+          "arroz",
+          "",
+          "rice"
+        ],
+        [
+          "leche",
+          "",
+          "milk"
+        ],
+        [
+          "té",
+          "",
+          "tea"
+        ],
+        [
+          "café",
+          "",
+          "coffee"
+        ],
+        [
+          "pan",
+          "",
+          "bread"
+        ],
+        [
+          "manzana",
+          "",
+          "apple"
+        ],
+        [
+          "comida",
+          "",
+          "food"
+        ],
+        [
+          "fruta",
+          "",
+          "fruit"
+        ],
+        [
+          "plátano",
+          "",
+          "banana"
+        ],
+        [
+          "mango",
+          "",
+          "mango"
+        ],
+        [
+          "tomate",
+          "",
+          "tomato"
+        ],
+        [
+          "patata",
+          "",
+          "potato"
+        ],
+        [
+          "huevo",
+          "",
+          "egg"
+        ],
+        [
+          "pollo",
+          "",
+          "chicken"
+        ],
+        [
+          "pescado",
+          "",
+          "fish"
+        ],
+        [
+          "sal",
+          "",
+          "salt"
+        ],
+        [
+          "azúcar",
+          "",
+          "sugar"
+        ],
+        [
+          "pimienta",
+          "",
+          "pepper"
+        ],
+        [
+          "verdura",
+          "",
+          "vegetable"
+        ],
+        [
+          "zumo de fruta",
+          "",
+          "fruit juice"
+        ],
+        [
+          "yogur",
+          "",
+          "yogurt"
+        ],
+        [
+          "tortilla",
+          "",
+          "omelette"
+        ],
+        [
+          "galleta",
+          "",
+          "biscuit"
+        ]
+      ]
+    }
+  ]
+}

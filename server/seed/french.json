@@ -1,1 +1,381 @@
-{"language":"French","code":"fr-FR","units":[{"title":"Basics","words":[["un","","one"],["deux","","two"],["trois","","three"],["quatre","","four"],["cinq","","five"],["six","","six"],["sept","","seven"],["huit","","eight"]]},{"title":"Greetings","words":[["bonjour","","hello"],["merci","","thank you"],["oui","","yes"],["non","","no"],["s'il vous plaît","","please"],["pardon","","sorry"],["bonjour","","good morning"],["au revoir","","goodbye"]]},{"title":"Food","words":[["eau","","water"],["riz","","rice"],["lait","","milk"],["thé","","tea"],["café","","coffee"],["pain","","bread"],["pomme","","apple"],["nourriture","","food"]]}]}
+{
+  "language": "French",
+  "code": "fr-FR",
+  "units": [
+    {
+      "title": "Basics",
+      "words": [
+        [
+          "un",
+          "",
+          "one"
+        ],
+        [
+          "deux",
+          "",
+          "two"
+        ],
+        [
+          "trois",
+          "",
+          "three"
+        ],
+        [
+          "quatre",
+          "",
+          "four"
+        ],
+        [
+          "cinq",
+          "",
+          "five"
+        ],
+        [
+          "six",
+          "",
+          "six"
+        ],
+        [
+          "sept",
+          "",
+          "seven"
+        ],
+        [
+          "huit",
+          "",
+          "eight"
+        ],
+        [
+          "neuf",
+          "",
+          "nine"
+        ],
+        [
+          "dix",
+          "",
+          "ten"
+        ],
+        [
+          "onze",
+          "",
+          "eleven"
+        ],
+        [
+          "douze",
+          "",
+          "twelve"
+        ],
+        [
+          "treize",
+          "",
+          "thirteen"
+        ],
+        [
+          "quatorze",
+          "",
+          "fourteen"
+        ],
+        [
+          "quinze",
+          "",
+          "fifteen"
+        ],
+        [
+          "seize",
+          "",
+          "sixteen"
+        ],
+        [
+          "dix-sept",
+          "",
+          "seventeen"
+        ],
+        [
+          "dix-huit",
+          "",
+          "eighteen"
+        ],
+        [
+          "dix-neuf",
+          "",
+          "nineteen"
+        ],
+        [
+          "vingt",
+          "",
+          "twenty"
+        ],
+        [
+          "vingt et un",
+          "",
+          "twenty-one"
+        ],
+        [
+          "vingt-deux",
+          "",
+          "twenty-two"
+        ],
+        [
+          "vingt-trois",
+          "",
+          "twenty-three"
+        ],
+        [
+          "vingt-quatre",
+          "",
+          "twenty-four"
+        ]
+      ]
+    },
+    {
+      "title": "Greetings",
+      "words": [
+        [
+          "bonjour",
+          "",
+          "hello"
+        ],
+        [
+          "merci",
+          "",
+          "thank you"
+        ],
+        [
+          "oui",
+          "",
+          "yes"
+        ],
+        [
+          "non",
+          "",
+          "no"
+        ],
+        [
+          "s'il vous plaît",
+          "",
+          "please"
+        ],
+        [
+          "pardon",
+          "",
+          "sorry"
+        ],
+        [
+          "bonjour",
+          "",
+          "good morning"
+        ],
+        [
+          "au revoir",
+          "",
+          "goodbye"
+        ],
+        [
+          "Comment allez-vous ?",
+          "",
+          "how are you?"
+        ],
+        [
+          "Je vais bien",
+          "",
+          "I am well"
+        ],
+        [
+          "Comment vous appelez-vous ?",
+          "",
+          "what is your name?"
+        ],
+        [
+          "Je m’appelle ...",
+          "",
+          "my name is"
+        ],
+        [
+          "Enchanté(e)",
+          "",
+          "nice to meet you"
+        ],
+        [
+          "Vous venez d’où ?",
+          "",
+          "where are you from?"
+        ],
+        [
+          "Bonsoir",
+          "",
+          "good evening"
+        ],
+        [
+          "Bienvenue",
+          "",
+          "welcome"
+        ],
+        [
+          "À bientôt",
+          "",
+          "see you again"
+        ],
+        [
+          "Aidez-moi, s’il vous plaît",
+          "",
+          "please help me"
+        ],
+        [
+          "Parlez lentement, s’il vous plaît",
+          "",
+          "speak slowly"
+        ],
+        [
+          "Je ne comprends pas",
+          "",
+          "I do not understand"
+        ],
+        [
+          "Parlez-vous anglais ?",
+          "",
+          "do you speak English?"
+        ],
+        [
+          "Je parle un peu",
+          "",
+          "I know a little"
+        ],
+        [
+          "À demain",
+          "",
+          "see you tomorrow"
+        ],
+        [
+          "Bonne journée",
+          "",
+          "have a nice day"
+        ]
+      ]
+    },
+    {
+      "title": "Food",
+      "words": [
+        [
+          "eau",
+          "",
+          "water"
+        ],
+        [
+          "riz",
+          "",
+          "rice"
+        ],
+        [
+          "lait",
+          "",
+          "milk"
+        ],
+        [
+          "thé",
+          "",
+          "tea"
+        ],
+        [
+          "café",
+          "",
+          "coffee"
+        ],
+        [
+          "pain",
+          "",
+          "bread"
+        ],
+        [
+          "pomme",
+          "",
+          "apple"
+        ],
+        [
+          "nourriture",
+          "",
+          "food"
+        ],
+        [
+          "fruit",
+          "",
+          "fruit"
+        ],
+        [
+          "banane",
+          "",
+          "banana"
+        ],
+        [
+          "mangue",
+          "",
+          "mango"
+        ],
+        [
+          "tomate",
+          "",
+          "tomato"
+        ],
+        [
+          "pomme de terre",
+          "",
+          "potato"
+        ],
+        [
+          "œuf",
+          "",
+          "egg"
+        ],
+        [
+          "poulet",
+          "",
+          "chicken"
+        ],
+        [
+          "poisson",
+          "",
+          "fish"
+        ],
+        [
+          "sel",
+          "",
+          "salt"
+        ],
+        [
+          "sucre",
+          "",
+          "sugar"
+        ],
+        [
+          "poivre",
+          "",
+          "pepper"
+        ],
+        [
+          "légume",
+          "",
+          "vegetable"
+        ],
+        [
+          "jus de fruits",
+          "",
+          "fruit juice"
+        ],
+        [
+          "yaourt",
+          "",
+          "yogurt"
+        ],
+        [
+          "omelette",
+          "",
+          "omelette"
+        ],
+        [
+          "biscuit",
+          "",
+          "biscuit"
+        ]
+      ]
+    }
+  ]
+}

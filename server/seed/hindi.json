@@ -1,1 +1,381 @@
-{"language":"Hindi","code":"hi-IN","units":[{"title":"Basics","words":[["एक","ek","one"],["दो","do","two"],["तीन","teen","three"],["चार","chaar","four"],["पाँच","paanch","five"],["छह","chhah","six"],["सात","saat","seven"],["आठ","aath","eight"]]},{"title":"Greetings","words":[["नमस्ते","namaste","hello"],["धन्यवाद","dhanyavaad","thank you"],["हाँ","haan","yes"],["नहीं","nahin","no"],["कृपया","kripya","please"],["माफ़ कीजिए","maaf kijiye","sorry"],["सुप्रभात","suprabhaat","good morning"],["अलविदा","alvida","goodbye"]]},{"title":"Food","words":[["पानी","paani","water"],["चावल","chaaval","rice"],["दूध","doodh","milk"],["चाय","chaay","tea"],["कॉफ़ी","coffee","coffee"],["रोटी","roti","bread"],["सेब","seb","apple"],["खाना","khaana","food"]]}]}
+{
+  "language": "Hindi",
+  "code": "hi-IN",
+  "units": [
+    {
+      "title": "Basics",
+      "words": [
+        [
+          "एक",
+          "ek",
+          "one"
+        ],
+        [
+          "दो",
+          "do",
+          "two"
+        ],
+        [
+          "तीन",
+          "teen",
+          "three"
+        ],
+        [
+          "चार",
+          "chaar",
+          "four"
+        ],
+        [
+          "पाँच",
+          "paanch",
+          "five"
+        ],
+        [
+          "छह",
+          "chhah",
+          "six"
+        ],
+        [
+          "सात",
+          "saat",
+          "seven"
+        ],
+        [
+          "आठ",
+          "aath",
+          "eight"
+        ],
+        [
+          "नौ",
+          "nau",
+          "nine"
+        ],
+        [
+          "दस",
+          "das",
+          "ten"
+        ],
+        [
+          "ग्यारह",
+          "gyarah",
+          "eleven"
+        ],
+        [
+          "बारह",
+          "barah",
+          "twelve"
+        ],
+        [
+          "तेरह",
+          "terah",
+          "thirteen"
+        ],
+        [
+          "चौदह",
+          "chaudah",
+          "fourteen"
+        ],
+        [
+          "पंद्रह",
+          "pandrah",
+          "fifteen"
+        ],
+        [
+          "सोलह",
+          "solah",
+          "sixteen"
+        ],
+        [
+          "सत्रह",
+          "satrah",
+          "seventeen"
+        ],
+        [
+          "अठारह",
+          "atharah",
+          "eighteen"
+        ],
+        [
+          "उन्नीस",
+          "unnees",
+          "nineteen"
+        ],
+        [
+          "बीस",
+          "bees",
+          "twenty"
+        ],
+        [
+          "इक्कीस",
+          "ikkis",
+          "twenty-one"
+        ],
+        [
+          "बाईस",
+          "baais",
+          "twenty-two"
+        ],
+        [
+          "तेईस",
+          "teis",
+          "twenty-three"
+        ],
+        [
+          "चौबीस",
+          "chaubis",
+          "twenty-four"
+        ]
+      ]
+    },
+    {
+      "title": "Greetings",
+      "words": [
+        [
+          "नमस्ते",
+          "namaste",
+          "hello"
+        ],
+        [
+          "धन्यवाद",
+          "dhanyavaad",
+          "thank you"
+        ],
+        [
+          "हाँ",
+          "haan",
+          "yes"
+        ],
+        [
+          "नहीं",
+          "nahin",
+          "no"
+        ],
+        [
+          "कृपया",
+          "kripya",
+          "please"
+        ],
+        [
+          "माफ़ कीजिए",
+          "maaf kijiye",
+          "sorry"
+        ],
+        [
+          "सुप्रभात",
+          "suprabhaat",
+          "good morning"
+        ],
+        [
+          "अलविदा",
+          "alvida",
+          "goodbye"
+        ],
+        [
+          "आप कैसे हैं?",
+          "aap kaise hain?",
+          "how are you?"
+        ],
+        [
+          "मैं ठीक हूँ",
+          "main theek hoon",
+          "I am well"
+        ],
+        [
+          "आपका नाम क्या है?",
+          "aapka naam kya hai?",
+          "what is your name?"
+        ],
+        [
+          "मेरा नाम ... है",
+          "mera naam ... hai",
+          "my name is"
+        ],
+        [
+          "आपसे मिलकर खुशी हुई",
+          "aapse milkar khushi hui",
+          "nice to meet you"
+        ],
+        [
+          "आप कहाँ से हैं?",
+          "aap kahaan se hain?",
+          "where are you from?"
+        ],
+        [
+          "शुभ संध्या",
+          "shubh sandhya",
+          "good evening"
+        ],
+        [
+          "आपका स्वागत है",
+          "aapka swagat hai",
+          "welcome"
+        ],
+        [
+          "फिर मिलेंगे",
+          "phir milenge",
+          "see you again"
+        ],
+        [
+          "कृपया मेरी मदद कीजिए",
+          "kripya meri madad kijiye",
+          "please help me"
+        ],
+        [
+          "कृपया धीरे बोलिए",
+          "kripya dheere boliye",
+          "speak slowly"
+        ],
+        [
+          "मुझे समझ नहीं आया",
+          "mujhe samajh nahin aaya",
+          "I do not understand"
+        ],
+        [
+          "क्या आप अंग्रेज़ी बोलते हैं?",
+          "kya aap angrezi bolte hain?",
+          "do you speak English?"
+        ],
+        [
+          "मुझे थोड़ी हिंदी आती है",
+          "mujhe thodi hindi aati hai",
+          "I know a little"
+        ],
+        [
+          "कल मिलते हैं",
+          "kal milte hain",
+          "see you tomorrow"
+        ],
+        [
+          "आपका दिन अच्छा हो",
+          "aapka din achchha ho",
+          "have a nice day"
+        ]
+      ]
+    },
+    {
+      "title": "Food",
+      "words": [
+        [
+          "पानी",
+          "paani",
+          "water"
+        ],
+        [
+          "चावल",
+          "chaaval",
+          "rice"
+        ],
+        [
+          "दूध",
+          "doodh",
+          "milk"
+        ],
+        [
+          "चाय",
+          "chaay",
+          "tea"
+        ],
+        [
+          "कॉफ़ी",
+          "coffee",
+          "coffee"
+        ],
+        [
+          "रोटी",
+          "roti",
+          "bread"
+        ],
+        [
+          "सेब",
+          "seb",
+          "apple"
+        ],
+        [
+          "खाना",
+          "khaana",
+          "food"
+        ],
+        [
+          "फल",
+          "phal",
+          "fruit"
+        ],
+        [
+          "केला",
+          "kela",
+          "banana"
+        ],
+        [
+          "आम",
+          "aam",
+          "mango"
+        ],
+        [
+          "टमाटर",
+          "tamatar",
+          "tomato"
+        ],
+        [
+          "आलू",
+          "aaloo",
+          "potato"
+        ],
+        [
+          "अंडा",
+          "anda",
+          "egg"
+        ],
+        [
+          "चिकन",
+          "chicken",
+          "chicken"
+        ],
+        [
+          "मछली",
+          "machhli",
+          "fish"
+        ],
+        [
+          "नमक",
+          "namak",
+          "salt"
+        ],
+        [
+          "चीनी",
+          "cheeni",
+          "sugar"
+        ],
+        [
+          "काली मिर्च",
+          "kaali mirch",
+          "pepper"
+        ],
+        [
+          "सब्ज़ी",
+          "sabzi",
+          "vegetable"
+        ],
+        [
+          "फलों का रस",
+          "phalon ka ras",
+          "fruit juice"
+        ],
+        [
+          "दही",
+          "dahi",
+          "yogurt"
+        ],
+        [
+          "इडली",
+          "idli",
+          "idli"
+        ],
+        [
+          "डोसा",
+          "dosa",
+          "dosa"
+        ]
+      ]
+    }
+  ]
+}

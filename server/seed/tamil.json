@@ -1,1 +1,381 @@
-{"language":"Tamil","code":"ta-IN","units":[{"title":"Basics","words":[["ஒன்று","ondru","one"],["இரண்டு","irandu","two"],["மூன்று","moondru","three"],["நான்கு","naangu","four"],["ஐந்து","aindhu","five"],["ஆறு","aaru","six"],["ஏழு","ezhu","seven"],["எட்டு","ettu","eight"]]},{"title":"Greetings","words":[["வணக்கம்","vanakkam","hello"],["நன்றி","nandri","thank you"],["ஆம்","aam","yes"],["இல்லை","illai","no"],["தயவுசெய்து","thayavuseithu","please"],["மன்னிக்கவும்","mannikkavum","sorry"],["காலை வணக்கம்","kaalai vanakkam","good morning"],["போய் வருகிறேன்","poi varugiren","goodbye"]]},{"title":"Food","words":[["தண்ணீர்","thanneer","water"],["சாதம்","saadham","rice"],["பால்","paal","milk"],["தேநீர்","thenir","tea"],["காபி","kaapi","coffee"],["ரொட்டி","rotti","bread"],["ஆப்பிள்","aappil","apple"],["உணவு","unavu","food"]]}]}
+{
+  "language": "Tamil",
+  "code": "ta-IN",
+  "units": [
+    {
+      "title": "Basics",
+      "words": [
+        [
+          "ஒன்று",
+          "ondru",
+          "one"
+        ],
+        [
+          "இரண்டு",
+          "irandu",
+          "two"
+        ],
+        [
+          "மூன்று",
+          "moondru",
+          "three"
+        ],
+        [
+          "நான்கு",
+          "naangu",
+          "four"
+        ],
+        [
+          "ஐந்து",
+          "aindhu",
+          "five"
+        ],
+        [
+          "ஆறு",
+          "aaru",
+          "six"
+        ],
+        [
+          "ஏழு",
+          "ezhu",
+          "seven"
+        ],
+        [
+          "எட்டு",
+          "ettu",
+          "eight"
+        ],
+        [
+          "ஒன்பது",
+          "onbadhu",
+          "nine"
+        ],
+        [
+          "பத்து",
+          "pathu",
+          "ten"
+        ],
+        [
+          "பதினொன்று",
+          "pathinondru",
+          "eleven"
+        ],
+        [
+          "பன்னிரண்டு",
+          "pannirandu",
+          "twelve"
+        ],
+        [
+          "பதின்மூன்று",
+          "pathinmoondru",
+          "thirteen"
+        ],
+        [
+          "பதினான்கு",
+          "pathinaangu",
+          "fourteen"
+        ],
+        [
+          "பதினைந்து",
+          "pathinaindhu",
+          "fifteen"
+        ],
+        [
+          "பதினாறு",
+          "pathinaaru",
+          "sixteen"
+        ],
+        [
+          "பதினேழு",
+          "pathinezhu",
+          "seventeen"
+        ],
+        [
+          "பதினெட்டு",
+          "pathinettu",
+          "eighteen"
+        ],
+        [
+          "பத்தொன்பது",
+          "paththonbadhu",
+          "nineteen"
+        ],
+        [
+          "இருபது",
+          "irubadhu",
+          "twenty"
+        ],
+        [
+          "இருபத்தொன்று",
+          "irupaththondru",
+          "twenty-one"
+        ],
+        [
+          "இருபத்திரண்டு",
+          "irupaththirandu",
+          "twenty-two"
+        ],
+        [
+          "இருபத்துமூன்று",
+          "irupaththimoonru",
+          "twenty-three"
+        ],
+        [
+          "இருபத்திநான்கு",
+          "irupaththinaangu",
+          "twenty-four"
+        ]
+      ]
+    },
+    {
+      "title": "Greetings",
+      "words": [
+        [
+          "வணக்கம்",
+          "vanakkam",
+          "hello"
+        ],
+        [
+          "நன்றி",
+          "nandri",
+          "thank you"
+        ],
+        [
+          "ஆம்",
+          "aam",
+          "yes"
+        ],
+        [
+          "இல்லை",
+          "illai",
+          "no"
+        ],
+        [
+          "தயவுசெய்து",
+          "thayavuseithu",
+          "please"
+        ],
+        [
+          "மன்னிக்கவும்",
+          "mannikkavum",
+          "sorry"
+        ],
+        [
+          "காலை வணக்கம்",
+          "kaalai vanakkam",
+          "good morning"
+        ],
+        [
+          "போய் வருகிறேன்",
+          "poi varugiren",
+          "goodbye"
+        ],
+        [
+          "நீங்கள் எப்படி இருக்கிறீர்கள்?",
+          "neengal eppadi irukkireergal?",
+          "how are you?"
+        ],
+        [
+          "நான் நலமாக இருக்கிறேன்",
+          "naan nalamaaga irukkiren",
+          "I am well"
+        ],
+        [
+          "உங்கள் பெயர் என்ன?",
+          "ungal peyar enna?",
+          "what is your name?"
+        ],
+        [
+          "என் பெயர் ...",
+          "en peyar ...",
+          "my name is"
+        ],
+        [
+          "உங்களை சந்தித்ததில் மகிழ்ச்சி",
+          "ungalai sandhithathil magizhchi",
+          "nice to meet you"
+        ],
+        [
+          "நீங்கள் எங்கிருந்து வருகிறீர்கள்?",
+          "neengal engirundhu varugireergal?",
+          "where are you from?"
+        ],
+        [
+          "மாலை வணக்கம்",
+          "maalai vanakkam",
+          "good evening"
+        ],
+        [
+          "வரவேற்கிறேன்",
+          "varaverkiren",
+          "welcome"
+        ],
+        [
+          "மீண்டும் சந்திப்போம்",
+          "meendum sandhippom",
+          "see you again"
+        ],
+        [
+          "தயவுசெய்து உதவுங்கள்",
+          "thayavuseithu udhavungal",
+          "please help me"
+        ],
+        [
+          "மெதுவாகப் பேசுங்கள்",
+          "medhuvaaga pesungal",
+          "speak slowly"
+        ],
+        [
+          "எனக்குப் புரியவில்லை",
+          "enakku puriyavillai",
+          "I do not understand"
+        ],
+        [
+          "ஆங்கிலம் பேசுவீர்களா?",
+          "aangilam pesuveergalaa?",
+          "do you speak English?"
+        ],
+        [
+          "எனக்குக் கொஞ்சம் தெரியும்",
+          "enakku konjam theriyum",
+          "I know a little"
+        ],
+        [
+          "நாளை சந்திப்போம்",
+          "naalai sandhippom",
+          "see you tomorrow"
+        ],
+        [
+          "நல்ல நாளாக இருக்கட்டும்",
+          "nalla naalaaga irukkattum",
+          "have a nice day"
+        ]
+      ]
+    },
+    {
+      "title": "Food",
+      "words": [
+        [
+          "தண்ணீர்",
+          "thanneer",
+          "water"
+        ],
+        [
+          "சாதம்",
+          "saadham",
+          "rice"
+        ],
+        [
+          "பால்",
+          "paal",
+          "milk"
+        ],
+        [
+          "தேநீர்",
+          "thenir",
+          "tea"
+        ],
+        [
+          "காபி",
+          "kaapi",
+          "coffee"
+        ],
+        [
+          "ரொட்டி",
+          "rotti",
+          "bread"
+        ],
+        [
+          "ஆப்பிள்",
+          "aappil",
+          "apple"
+        ],
+        [
+          "உணவு",
+          "unavu",
+          "food"
+        ],
+        [
+          "பழம்",
+          "palam",
+          "fruit"
+        ],
+        [
+          "வாழைப்பழம்",
+          "vaazhaipazham",
+          "banana"
+        ],
+        [
+          "மாம்பழம்",
+          "maampazham",
+          "mango"
+        ],
+        [
+          "தக்காளி",
+          "thakkaali",
+          "tomato"
+        ],
+        [
+          "உருளைக்கிழங்கு",
+          "urulaikkizhangu",
+          "potato"
+        ],
+        [
+          "முட்டை",
+          "muttai",
+          "egg"
+        ],
+        [
+          "கோழி",
+          "kozhi",
+          "chicken"
+        ],
+        [
+          "மீன்",
+          "meen",
+          "fish"
+        ],
+        [
+          "உப்பு",
+          "uppu",
+          "salt"
+        ],
+        [
+          "சர்க்கரை",
+          "sarkkarai",
+          "sugar"
+        ],
+        [
+          "மிளகு",
+          "milagu",
+          "pepper"
+        ],
+        [
+          "காய்கறி",
+          "kaaykari",
+          "vegetable"
+        ],
+        [
+          "பழச்சாறு",
+          "pazhachaaru",
+          "fruit juice"
+        ],
+        [
+          "தயிர்",
+          "thayir",
+          "yogurt"
+        ],
+        [
+          "இட்லி",
+          "idli",
+          "idli"
+        ],
+        [
+          "தோசை",
+          "dosai",
+          "dosa"
+        ]
+      ]
+    }
+  ]
+}

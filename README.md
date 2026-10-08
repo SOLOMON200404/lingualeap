@@ -36,16 +36,26 @@ This setup uses Vercel Hobby and a Neon free PostgreSQL database. It provides a 
    | `SMTP_APP_PASSWORD` | A Google App Password (not your Gmail login password) |
    | `SMTP_FROM` | `LinguaLeap <sender@gmail.com>` using the same sender |
 
-4. Deploy. Vercel Services builds the React frontend and Express API separately but routes them through one URL. The API build generates the PostgreSQL Prisma client and creates/updates the database schema. Once the first deployment is ready, seed the course content once from PowerShell in this repo. Temporarily enter the Neon URLs in PowerShell (input is hidden), then run the seed command:
+4. Deploy. Vercel Services builds the React frontend and Express API separately but routes them through one URL. The API build generates the PostgreSQL Prisma client and creates/updates the database schema. Once the first deployment is ready, seed the course content once from PowerShell in this repo. For this local seed step, enter the **pooled URL for both prompts**: the seed uses `DATABASE_URL`, and `DIRECT_URL` is only needed by Prisma to load the production schema. The API deployment itself uses the direct URL for schema setup.
 
    ```powershell
-   $env:DATABASE_URL = Read-Host "Neon pooled DATABASE_URL"
-   $env:DIRECT_URL = Read-Host "Neon direct DIRECT_URL"
-   npm run seed:vercel
-   Remove-Item Env:DATABASE_URL, Env:DIRECT_URL
+   function Read-SecretValue([string]$Prompt) {
+     $secure = Read-Host $Prompt -AsSecureString
+     $ptr = [Runtime.InteropServices.Marshal]::SecureStringToBSTR($secure)
+     try { [Runtime.InteropServices.Marshal]::PtrToStringBSTR($ptr) }
+     finally { [Runtime.InteropServices.Marshal]::ZeroFreeBSTR($ptr) }
+   }
+   $env:DATABASE_URL = Read-SecretValue "Neon pooled URL for DATABASE_URL"
+   $env:DIRECT_URL = Read-SecretValue "Same pooled URL for Prisma schema"
+   try {
+     npm run seed:vercel
+     if ($LASTEXITCODE -ne 0) { throw "Seeding failed; check the output." }
+   } finally {
+     Remove-Item Env:DATABASE_URL, Env:DIRECT_URL -ErrorAction SilentlyContinue
+   }
    ```
 
-   This seeds five courses, 15 units, 45 lessons and 360 exercises. The database URLs include credentials; do not share terminal screenshots.
+   This seeds five courses, 15 units, 45 lessons and 360 exercises. The URLs include credentials; do not share terminal screenshots.
 5. Open the Vercel deployment URL and test signup, OTP email, login and a lesson. Redeployments do not rerun the seed command.
 
 Use a newly generated `JWT_SECRET` and a newly generated Gmail App Password for the deployed project. Never commit credentials or paste them into chat. Vercel Functions have a read-only filesystem, so the app's local SQLite database is deliberately not used in production. See [Vercel Express deployment](https://vercel.com/docs/frameworks/backend/express), [Vercel Functions filesystem limits](https://vercel.com/docs/functions/runtimes), [Vercel Hobby plan](https://vercel.com/docs/plans/hobby), and [Neon](https://neon.tech/pricing).
@@ -57,11 +67,11 @@ Sign-up verifies the learner's email using a six-digit OTP before signing in. La
 ## Architecture
 
 - `client/`: responsive React UI, React Router and Vite.
-- `server/`: REST API, auth, OTP email delivery, answer validation, progress and gamification.
+- `server/`: REST API, auth, OTP email delivery, server-validated exercises, lesson progress, and pet rewards/customisation.
 - `server/prisma/schema.prisma`: local SQLite data model.
 - `server/prisma/schema.postgresql.prisma`: production PostgreSQL model for Vercel.
-- `server/seed/*.json`: editable beginner vocabulary per language.
-- `server/prisma/seed.ts`: expands the language files into five courses, 15 units, 45 lessons and 360 exercises.
+- `server/seed/*.json`: editable beginner vocabulary and phrases per language; the seed helper expands each unit to 24 items for varied lesson sets.
+- `server/seed/expand-content.mjs` and `server/prisma/seed.ts`: prepare the editable word banks, then seed five courses, 15 units, 45 lessons, and 360 contextual exercises. First-time lesson completion awards pet XP and berries.
 - `vercel.json`: Vercel Services routing and build configuration.
 
 ## Screenshots
