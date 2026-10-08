@@ -6,9 +6,19 @@
       "title": "Basics",
       "words": [
         [
+          "hola",
+          "",
+          "hello"
+        ],
+        [
           "uno",
           "",
           "one"
+        ],
+        [
+          "gracias",
+          "",
+          "thank you"
         ],
         [
           "dos",
@@ -16,9 +26,19 @@
           "two"
         ],
         [
+          "sí",
+          "",
+          "yes"
+        ],
+        [
           "tres",
           "",
           "three"
+        ],
+        [
+          "no",
+          "",
+          "no"
         ],
         [
           "cuatro",
@@ -26,9 +46,19 @@
           "four"
         ],
         [
+          "por favor",
+          "",
+          "please"
+        ],
+        [
           "cinco",
           "",
           "five"
+        ],
+        [
+          "perdón",
+          "",
+          "sorry"
         ],
         [
           "seis",
@@ -36,9 +66,19 @@
           "six"
         ],
         [
+          "buenos días",
+          "",
+          "good morning"
+        ],
+        [
           "siete",
           "",
           "seven"
+        ],
+        [
+          "adiós",
+          "",
+          "goodbye"
         ],
         [
           "ocho",
@@ -84,92 +124,12 @@
           "dieciséis",
           "",
           "sixteen"
-        ],
-        [
-          "diecisiete",
-          "",
-          "seventeen"
-        ],
-        [
-          "dieciocho",
-          "",
-          "eighteen"
-        ],
-        [
-          "diecinueve",
-          "",
-          "nineteen"
-        ],
-        [
-          "veinte",
-          "",
-          "twenty"
-        ],
-        [
-          "veintiuno",
-          "",
-          "twenty-one"
-        ],
-        [
-          "veintidós",
-          "",
-          "twenty-two"
-        ],
-        [
-          "veintitrés",
-          "",
-          "twenty-three"
-        ],
-        [
-          "veinticuatro",
-          "",
-          "twenty-four"
         ]
       ]
     },
     {
       "title": "Greetings",
       "words": [
-        [
-          "hola",
-          "",
-          "hello"
-        ],
-        [
-          "gracias",
-          "",
-          "thank you"
-        ],
-        [
-          "sí",
-          "",
-          "yes"
-        ],
-        [
-          "no",
-          "",
-          "no"
-        ],
-        [
-          "por favor",
-          "",
-          "please"
-        ],
-        [
-          "perdón",
-          "",
-          "sorry"
-        ],
-        [
-          "buenos días",
-          "",
-          "good morning"
-        ],
-        [
-          "adiós",
-          "",
-          "goodbye"
-        ],
         [
           "¿Cómo estás?",
           "",
@@ -249,6 +209,46 @@
           "Que tengas un buen día",
           "",
           "have a nice day"
+        ],
+        [
+          "¿Qué hora es?",
+          "",
+          "what time is it?"
+        ],
+        [
+          "¿Cuántos años tienes?",
+          "",
+          "how old are you?"
+        ],
+        [
+          "¿Dónde está la parada de autobús?",
+          "",
+          "where is the bus stop?"
+        ],
+        [
+          "¿Puede repetirlo?",
+          "",
+          "could you repeat that?"
+        ],
+        [
+          "¿Dónde está el baño?",
+          "",
+          "where is the restroom?"
+        ],
+        [
+          "¿Cuánto cuesta?",
+          "",
+          "how much does it cost?"
+        ],
+        [
+          "Me gustaría",
+          "",
+          "I would like"
+        ],
+        [
+          "¿Puede ayudarme?",
+          "",
+          "can you help me?"
         ]
       ]
     },

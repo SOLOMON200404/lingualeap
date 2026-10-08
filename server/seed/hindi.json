@@ -6,9 +6,19 @@
       "title": "Basics",
       "words": [
         [
+          "नमस्ते",
+          "namaste",
+          "hello"
+        ],
+        [
           "एक",
           "ek",
           "one"
+        ],
+        [
+          "धन्यवाद",
+          "dhanyavaad",
+          "thank you"
         ],
         [
           "दो",
@@ -16,9 +26,19 @@
           "two"
         ],
         [
+          "हाँ",
+          "haan",
+          "yes"
+        ],
+        [
           "तीन",
           "teen",
           "three"
+        ],
+        [
+          "नहीं",
+          "nahin",
+          "no"
         ],
         [
           "चार",
@@ -26,9 +46,19 @@
           "four"
         ],
         [
+          "कृपया",
+          "kripya",
+          "please"
+        ],
+        [
           "पाँच",
           "paanch",
           "five"
+        ],
+        [
+          "माफ़ कीजिए",
+          "maaf kijiye",
+          "sorry"
         ],
         [
           "छह",
@@ -36,9 +66,19 @@
           "six"
         ],
         [
+          "सुप्रभात",
+          "suprabhaat",
+          "good morning"
+        ],
+        [
           "सात",
           "saat",
           "seven"
+        ],
+        [
+          "अलविदा",
+          "alvida",
+          "goodbye"
         ],
         [
           "आठ",
@@ -84,92 +124,12 @@
           "सोलह",
           "solah",
           "sixteen"
-        ],
-        [
-          "सत्रह",
-          "satrah",
-          "seventeen"
-        ],
-        [
-          "अठारह",
-          "atharah",
-          "eighteen"
-        ],
-        [
-          "उन्नीस",
-          "unnees",
-          "nineteen"
-        ],
-        [
-          "बीस",
-          "bees",
-          "twenty"
-        ],
-        [
-          "इक्कीस",
-          "ikkis",
-          "twenty-one"
-        ],
-        [
-          "बाईस",
-          "baais",
-          "twenty-two"
-        ],
-        [
-          "तेईस",
-          "teis",
-          "twenty-three"
-        ],
-        [
-          "चौबीस",
-          "chaubis",
-          "twenty-four"
         ]
       ]
     },
     {
       "title": "Greetings",
       "words": [
-        [
-          "नमस्ते",
-          "namaste",
-          "hello"
-        ],
-        [
-          "धन्यवाद",
-          "dhanyavaad",
-          "thank you"
-        ],
-        [
-          "हाँ",
-          "haan",
-          "yes"
-        ],
-        [
-          "नहीं",
-          "nahin",
-          "no"
-        ],
-        [
-          "कृपया",
-          "kripya",
-          "please"
-        ],
-        [
-          "माफ़ कीजिए",
-          "maaf kijiye",
-          "sorry"
-        ],
-        [
-          "सुप्रभात",
-          "suprabhaat",
-          "good morning"
-        ],
-        [
-          "अलविदा",
-          "alvida",
-          "goodbye"
-        ],
         [
           "आप कैसे हैं?",
           "aap kaise hain?",
@@ -249,6 +209,46 @@
           "आपका दिन अच्छा हो",
           "aapka din achchha ho",
           "have a nice day"
+        ],
+        [
+          "कितने बजे हैं?",
+          "kitne baje hain?",
+          "what time is it?"
+        ],
+        [
+          "आपकी उम्र क्या है?",
+          "aapki umr kya hai?",
+          "how old are you?"
+        ],
+        [
+          "बस स्टॉप कहाँ है?",
+          "bus stop kahaan hai?",
+          "where is the bus stop?"
+        ],
+        [
+          "क्या आप इसे दोहरा सकते हैं?",
+          "kya aap ise dohra sakte hain?",
+          "could you repeat that?"
+        ],
+        [
+          "शौचालय कहाँ है?",
+          "shauchalay kahaan hai?",
+          "where is the restroom?"
+        ],
+        [
+          "इसकी कीमत कितनी है?",
+          "iski keemat kitni hai?",
+          "how much does it cost?"
+        ],
+        [
+          "मुझे ... चाहिए",
+          "mujhe ... chahiye",
+          "I would like"
+        ],
+        [
+          "क्या आप मेरी मदद कर सकते हैं?",
+          "kya aap meri madad kar sakte hain?",
+          "can you help me?"
         ]
       ]
     },

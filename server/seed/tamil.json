@@ -6,9 +6,19 @@
       "title": "Basics",
       "words": [
         [
+          "வணக்கம்",
+          "vanakkam",
+          "hello"
+        ],
+        [
           "ஒன்று",
           "ondru",
           "one"
+        ],
+        [
+          "நன்றி",
+          "nandri",
+          "thank you"
         ],
         [
           "இரண்டு",
@@ -16,9 +26,19 @@
           "two"
         ],
         [
+          "ஆம்",
+          "aam",
+          "yes"
+        ],
+        [
           "மூன்று",
           "moondru",
           "three"
+        ],
+        [
+          "இல்லை",
+          "illai",
+          "no"
         ],
         [
           "நான்கு",
@@ -26,9 +46,19 @@
           "four"
         ],
         [
+          "தயவுசெய்து",
+          "thayavuseithu",
+          "please"
+        ],
+        [
           "ஐந்து",
           "aindhu",
           "five"
+        ],
+        [
+          "மன்னிக்கவும்",
+          "mannikkavum",
+          "sorry"
         ],
         [
           "ஆறு",
@@ -36,9 +66,19 @@
           "six"
         ],
         [
+          "காலை வணக்கம்",
+          "kaalai vanakkam",
+          "good morning"
+        ],
+        [
           "ஏழு",
           "ezhu",
           "seven"
+        ],
+        [
+          "போய் வருகிறேன்",
+          "poi varugiren",
+          "goodbye"
         ],
         [
           "எட்டு",
@@ -84,92 +124,12 @@
           "பதினாறு",
           "pathinaaru",
           "sixteen"
-        ],
-        [
-          "பதினேழு",
-          "pathinezhu",
-          "seventeen"
-        ],
-        [
-          "பதினெட்டு",
-          "pathinettu",
-          "eighteen"
-        ],
-        [
-          "பத்தொன்பது",
-          "paththonbadhu",
-          "nineteen"
-        ],
-        [
-          "இருபது",
-          "irubadhu",
-          "twenty"
-        ],
-        [
-          "இருபத்தொன்று",
-          "irupaththondru",
-          "twenty-one"
-        ],
-        [
-          "இருபத்திரண்டு",
-          "irupaththirandu",
-          "twenty-two"
-        ],
-        [
-          "இருபத்துமூன்று",
-          "irupaththimoonru",
-          "twenty-three"
-        ],
-        [
-          "இருபத்திநான்கு",
-          "irupaththinaangu",
-          "twenty-four"
         ]
       ]
     },
     {
       "title": "Greetings",
       "words": [
-        [
-          "வணக்கம்",
-          "vanakkam",
-          "hello"
-        ],
-        [
-          "நன்றி",
-          "nandri",
-          "thank you"
-        ],
-        [
-          "ஆம்",
-          "aam",
-          "yes"
-        ],
-        [
-          "இல்லை",
-          "illai",
-          "no"
-        ],
-        [
-          "தயவுசெய்து",
-          "thayavuseithu",
-          "please"
-        ],
-        [
-          "மன்னிக்கவும்",
-          "mannikkavum",
-          "sorry"
-        ],
-        [
-          "காலை வணக்கம்",
-          "kaalai vanakkam",
-          "good morning"
-        ],
-        [
-          "போய் வருகிறேன்",
-          "poi varugiren",
-          "goodbye"
-        ],
         [
           "நீங்கள் எப்படி இருக்கிறீர்கள்?",
           "neengal eppadi irukkireergal?",
@@ -249,6 +209,46 @@
           "நல்ல நாளாக இருக்கட்டும்",
           "nalla naalaaga irukkattum",
           "have a nice day"
+        ],
+        [
+          "மணி என்ன?",
+          "mani enna?",
+          "what time is it?"
+        ],
+        [
+          "உங்களுக்கு எவ்வளவு வயது?",
+          "ungalukku evvalavu vayadhu?",
+          "how old are you?"
+        ],
+        [
+          "பேருந்து நிறுத்தம் எங்கே?",
+          "perundhu nirutham enge?",
+          "where is the bus stop?"
+        ],
+        [
+          "அதை மீண்டும் சொல்ல முடியுமா?",
+          "athai meendum solla mudiyuma?",
+          "could you repeat that?"
+        ],
+        [
+          "கழிப்பறை எங்கே?",
+          "kazhipparai enge?",
+          "where is the restroom?"
+        ],
+        [
+          "இதன் விலை எவ்வளவு?",
+          "idhan vilai evvalavu?",
+          "how much does it cost?"
+        ],
+        [
+          "எனக்கு ... வேண்டும்",
+          "enakku ... vendum",
+          "I would like"
+        ],
+        [
+          "எனக்கு உதவ முடியுமா?",
+          "enakku udhava mudiyuma?",
+          "can you help me?"
         ]
       ]
     },

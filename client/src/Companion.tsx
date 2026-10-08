@@ -24,8 +24,11 @@ export default function Companion() {
   const [error, setError] = useState('');
   const [notice, setNotice] = useState('');
   const [busy, setBusy] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   async function refresh() {
+    setLoading(true);
+    setError('');
     try {
       const result = await api('/pet');
       setPet(result);
@@ -34,7 +37,7 @@ export default function Companion() {
       setAccessory(result.accessory);
     } catch (e: any) {
       setError(e.message);
-    }
+    } finally { setLoading(false); }
   }
   useEffect(() => { void refresh(); }, []);
 
@@ -56,8 +59,9 @@ export default function Companion() {
     finally { setBusy(false); }
   }
 
-  if (error === 'Please sign in') return <main className="page companion-page"><section className="pet-signin"><PetAvatar/><h1>Your companion is waiting</h1><p>Sign in to meet and grow your learning buddy.</p><Link className="primary" to="/login">Log in <ArrowRight size={17}/></Link></section></main>;
-  if (!pet) return <main className="page companion-page"><p>Loading your companion…</p></main>;
+  if (loading && !pet) return <main className="page companion-page"><section className="pet-signin"><PetAvatar/><h1>Finding your companion…</h1><p>Your learning buddy is getting ready.</p></section></main>;
+  if (!pet && (error === 'Please sign in' || error.includes('401'))) return <main className="page companion-page"><section className="pet-signin"><PetAvatar/><h1>Your companion is waiting</h1><p>Sign in to meet and grow your learning buddy.</p><Link className="primary" to="/login">Log in <ArrowRight size={17}/></Link></section></main>;
+  if (!pet) return <main className="page companion-page"><section className="pet-signin"><PetAvatar/><h1>We couldn’t load your companion</h1><p>{error || 'Check your connection and try again.'}</p><button className="primary" onClick={()=>void refresh()}>Try again <ArrowRight size={17}/></button></section></main>;
 
   const nextLevel = pet.level * 240;
   const progress = Math.min(100, Math.round(((pet.xp % 240) / 240) * 100));

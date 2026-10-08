@@ -6,9 +6,19 @@
       "title": "Basics",
       "words": [
         [
+          "നമസ്കാരം",
+          "namaskaaram",
+          "hello"
+        ],
+        [
           "ഒന്ന്",
           "onnu",
           "one"
+        ],
+        [
+          "നന്ദി",
+          "nandi",
+          "thank you"
         ],
         [
           "രണ്ട്",
@@ -16,9 +26,19 @@
           "two"
         ],
         [
+          "അതെ",
+          "athe",
+          "yes"
+        ],
+        [
           "മൂന്ന്",
           "moonnu",
           "three"
+        ],
+        [
+          "ഇല്ല",
+          "illa",
+          "no"
         ],
         [
           "നാല്",
@@ -26,9 +46,19 @@
           "four"
         ],
         [
+          "ദയവായി",
+          "dayavaayi",
+          "please"
+        ],
+        [
           "അഞ്ച്",
           "anchu",
           "five"
+        ],
+        [
+          "ക്ഷമിക്കണം",
+          "kshamikkanam",
+          "sorry"
         ],
         [
           "ആറ്",
@@ -36,9 +66,19 @@
           "six"
         ],
         [
+          "സുപ്രഭാതം",
+          "suprabhaatham",
+          "good morning"
+        ],
+        [
           "ഏഴ്",
           "ezhu",
           "seven"
+        ],
+        [
+          "വിട",
+          "vida",
+          "goodbye"
         ],
         [
           "എട്ട്",
@@ -84,92 +124,12 @@
           "പതിനാറ്",
           "pathinaaru",
           "sixteen"
-        ],
-        [
-          "പതിനേഴ്",
-          "pathinezhu",
-          "seventeen"
-        ],
-        [
-          "പതിനെട്ട്",
-          "pathinettu",
-          "eighteen"
-        ],
-        [
-          "പത്തൊമ്പത്",
-          "pathonpathu",
-          "nineteen"
-        ],
-        [
-          "ഇരുപത്",
-          "irupathu",
-          "twenty"
-        ],
-        [
-          "ഇരുപത്തൊന്ന്",
-          "irupathonnu",
-          "twenty-one"
-        ],
-        [
-          "ഇരുപത്തിരണ്ട്",
-          "irupathirandu",
-          "twenty-two"
-        ],
-        [
-          "ഇരുപത്തിമൂന്ന്",
-          "irupathimoonnu",
-          "twenty-three"
-        ],
-        [
-          "ഇരുപത്തിനാല്",
-          "irupathinaalu",
-          "twenty-four"
         ]
       ]
     },
     {
       "title": "Greetings",
       "words": [
-        [
-          "നമസ്കാരം",
-          "namaskaaram",
-          "hello"
-        ],
-        [
-          "നന്ദി",
-          "nandi",
-          "thank you"
-        ],
-        [
-          "അതെ",
-          "athe",
-          "yes"
-        ],
-        [
-          "ഇല്ല",
-          "illa",
-          "no"
-        ],
-        [
-          "ദയവായി",
-          "dayavaayi",
-          "please"
-        ],
-        [
-          "ക്ഷമിക്കണം",
-          "kshamikkanam",
-          "sorry"
-        ],
-        [
-          "സുപ്രഭാതം",
-          "suprabhaatham",
-          "good morning"
-        ],
-        [
-          "വിട",
-          "vida",
-          "goodbye"
-        ],
         [
           "സുഖമാണോ?",
           "sukhamaano?",
@@ -249,6 +209,46 @@
           "നല്ലൊരു ദിവസം ആശംസിക്കുന്നു",
           "nalloru divasam aashamsikkunnu",
           "have a nice day"
+        ],
+        [
+          "സമയം എത്രയാണ്?",
+          "samayam ethrayaanu?",
+          "what time is it?"
+        ],
+        [
+          "നിങ്ങളുടെ പ്രായം എത്രയാണ്?",
+          "ningalude praayam ethrayaanu?",
+          "how old are you?"
+        ],
+        [
+          "ബസ് സ്റ്റോപ്പ് എവിടെയാണ്?",
+          "bus stop evideyaanu?",
+          "where is the bus stop?"
+        ],
+        [
+          "അത് വീണ്ടും പറയാമോ?",
+          "athu veendum parayaamo?",
+          "could you repeat that?"
+        ],
+        [
+          "ശൗചാലയം എവിടെയാണ്?",
+          "shauchalayam evideyaanu?",
+          "where is the restroom?"
+        ],
+        [
+          "ഇതിന്റെ വില എത്രയാണ്?",
+          "ithinte vila ethrayaanu?",
+          "how much does it cost?"
+        ],
+        [
+          "എനിക്ക് ... വേണം",
+          "enikku ... venam",
+          "I would like"
+        ],
+        [
+          "എന്നെ സഹായിക്കാമോ?",
+          "enne sahaayikkaamo?",
+          "can you help me?"
         ]
       ]
     },

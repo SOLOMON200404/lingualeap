@@ -25,6 +25,16 @@ const food = {
   french: [['fruit','','fruit'],['banane','','banana'],['mangue','','mango'],['tomate','','tomato'],['pomme de terre','','potato'],['œuf','','egg'],['poulet','','chicken'],['poisson','','fish'],['sel','','salt'],['sucre','','sugar'],['poivre','','pepper'],['légume','','vegetable'],['jus de fruits','','fruit juice'],['yaourt','','yogurt'],['omelette','','omelette'],['biscuit','','biscuit']],
 };
 
+// Rebalance the opening unit so a new learner practises useful expressions
+// alongside numbers instead of spending an entire first lesson counting.
+const extraGreetings = {
+  tamil: [['மணி என்ன?','mani enna?','what time is it?'],['உங்களுக்கு எவ்வளவு வயது?','ungalukku evvalavu vayadhu?','how old are you?'],['பேருந்து நிறுத்தம் எங்கே?','perundhu nirutham enge?','where is the bus stop?'],['அதை மீண்டும் சொல்ல முடியுமா?','athai meendum solla mudiyuma?','could you repeat that?'],['கழிப்பறை எங்கே?','kazhipparai enge?','where is the restroom?'],['இதன் விலை எவ்வளவு?','idhan vilai evvalavu?','how much does it cost?'],['எனக்கு ... வேண்டும்','enakku ... vendum','I would like'],['எனக்கு உதவ முடியுமா?','enakku udhava mudiyuma?','can you help me?']],
+  hindi: [['कितने बजे हैं?','kitne baje hain?','what time is it?'],['आपकी उम्र क्या है?','aapki umr kya hai?','how old are you?'],['बस स्टॉप कहाँ है?','bus stop kahaan hai?','where is the bus stop?'],['क्या आप इसे दोहरा सकते हैं?','kya aap ise dohra sakte hain?','could you repeat that?'],['शौचालय कहाँ है?','shauchalay kahaan hai?','where is the restroom?'],['इसकी कीमत कितनी है?','iski keemat kitni hai?','how much does it cost?'],['मुझे ... चाहिए','mujhe ... chahiye','I would like'],['क्या आप मेरी मदद कर सकते हैं?','kya aap meri madad kar sakte hain?','can you help me?']],
+  malayalam: [['സമയം എത്രയാണ്?','samayam ethrayaanu?','what time is it?'],['നിങ്ങളുടെ പ്രായം എത്രയാണ്?','ningalude praayam ethrayaanu?','how old are you?'],['ബസ് സ്റ്റോപ്പ് എവിടെയാണ്?','bus stop evideyaanu?','where is the bus stop?'],['അത് വീണ്ടും പറയാമോ?','athu veendum parayaamo?','could you repeat that?'],['ശൗചാലയം എവിടെയാണ്?','shauchalayam evideyaanu?','where is the restroom?'],['ഇതിന്റെ വില എത്രയാണ്?','ithinte vila ethrayaanu?','how much does it cost?'],['എനിക്ക് ... വേണം','enikku ... venam','I would like'],['എന്നെ സഹായിക്കാമോ?','enne sahaayikkaamo?','can you help me?']],
+  spanish: [['¿Qué hora es?','','what time is it?'],['¿Cuántos años tienes?','','how old are you?'],['¿Dónde está la parada de autobús?','','where is the bus stop?'],['¿Puede repetirlo?','','could you repeat that?'],['¿Dónde está el baño?','','where is the restroom?'],['¿Cuánto cuesta?','','how much does it cost?'],['Me gustaría','','I would like'],['¿Puede ayudarme?','','can you help me?']],
+  french: [['Quelle heure est-il ?','','what time is it?'],['Quel âge avez-vous ?','','how old are you?'],['Où est l’arrêt de bus ?','','where is the bus stop?'],['Pouvez-vous répéter ?','','could you repeat that?'],['Où sont les toilettes ?','','where is the restroom?'],['Combien ça coûte ?','','how much does it cost?'],['Je voudrais','','I would like'],["Pouvez-vous m'aider ?",'','can you help me?']],
+};
+
 for (const lang of Object.keys(numbers)) {
   const path = join(root, `${lang}.json`);
   const data = JSON.parse(await readFile(path, 'utf8'));
@@ -32,6 +42,17 @@ for (const lang of Object.keys(numbers)) {
     if (data.units[index].words.length === 8) data.units[index].words.push(...items);
     if (data.units[index].words.length !== 24) throw new Error(`${lang} ${data.units[index].title} must contain 8 or 24 entries before expansion.`);
   });
+  const basics = data.units[0].words;
+  const greetingsWords = data.units[1].words;
+  if (basics[0]?.[2] === 'one' && greetingsWords[0]?.[2] === 'hello' && basics.length === 24 && greetingsWords.length === 24) {
+    const usefulExpressions = greetingsWords.slice(0, 8);
+    const firstSixteenNumbers = basics.slice(0, 16);
+    data.units[0].words = [
+      ...usefulExpressions.flatMap((phrase, index) => [phrase, firstSixteenNumbers[index]]),
+      ...firstSixteenNumbers.slice(8),
+    ];
+    data.units[1].words = [...greetingsWords.slice(8), ...extraGreetings[lang]];
+  }
   await writeFile(path, `${JSON.stringify(data, null, 2)}\n`, 'utf8');
 }
 console.log('Expanded all five courses to 24 items per unit.');
