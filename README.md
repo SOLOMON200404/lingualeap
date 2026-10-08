@@ -22,8 +22,8 @@ Root scripts: `npm run dev`, `npm run build`, `npm test`, `npm run seed`.
 This setup uses Vercel Hobby and a Neon free PostgreSQL database. It provides a free `*.vercel.app` URL; a custom domain is optional and usually costs money. Free-plan quotas and provider terms can change, and exceeding limits may require an upgrade. Vercel Hobby is for personal, non-commercial projects. Vercel serves the React build from its CDN and runs the Express API as a serverless function. Production data lives in PostgreSQL, never in the function filesystem.
 
 1. Create a Neon project at [neon.tech](https://neon.tech), copy its pooled connection string and direct connection string, and keep both private.
-2. In [Vercel](https://vercel.com), import `SOLOMON200404/lingualeap` from GitHub. Keep the project root at `./`; `vercel.json` contains the build and routing setup.
-3. Add these Vercel environment variables for **Production** (and Preview if you want preview URLs to work):
+2. In [Vercel](https://vercel.com), import `SOLOMON200404/lingualeap` from GitHub as a **multi-service project**. Its root `vercel.json` defines one React service and one Express service behind the same URL.
+3. Add these Vercel project environment variables for **Production** (and Preview if you want preview URLs to work):
 
    | Variable | Value |
    | --- | --- |
@@ -36,7 +36,7 @@ This setup uses Vercel Hobby and a Neon free PostgreSQL database. It provides a 
    | `SMTP_APP_PASSWORD` | A Google App Password (not your Gmail login password) |
    | `SMTP_FROM` | `LinguaLeap <sender@gmail.com>` using the same sender |
 
-4. Deploy. The build generates the PostgreSQL Prisma client and creates/updates the database schema. Once the first deployment is ready, seed the course content once from PowerShell in this repo. Temporarily enter the Neon URLs in PowerShell (input is hidden), then run the seed command:
+4. Deploy. Vercel Services builds the React frontend and Express API separately but routes them through one URL. The API build generates the PostgreSQL Prisma client and creates/updates the database schema. Once the first deployment is ready, seed the course content once from PowerShell in this repo. Temporarily enter the Neon URLs in PowerShell (input is hidden), then run the seed command:
 
    ```powershell
    $env:DATABASE_URL = Read-Host "Neon pooled DATABASE_URL"
@@ -62,7 +62,7 @@ Sign-up verifies the learner's email using a six-digit OTP before signing in. La
 - `server/prisma/schema.postgresql.prisma`: production PostgreSQL model for Vercel.
 - `server/seed/*.json`: editable beginner vocabulary per language.
 - `server/prisma/seed.ts`: expands the language files into five courses, 15 units, 45 lessons and 360 exercises.
-- `vercel.json`: Vercel API/static routing and build configuration.
+- `vercel.json`: Vercel Services routing and build configuration.
 
 ## Screenshots
 

@@ -1,31 +1,32 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "version": 2,
-  "builds": [
-    {
-      "src": "package.json",
-      "use": "@vercel/static-build",
-      "config": {
-        "distDir": "public",
-        "buildCommand": "npm run build:vercel"
-      }
+  "services": {
+    "web": {
+      "root": "client",
+      "framework": "vite",
+      "installCommand": "cd .. && npm ci",
+      "buildCommand": "npm run build",
+      "outputDirectory": "dist",
+      "rewrites": [
+        { "source": "/(.*)", "destination": "/index.html" }
+      ]
     },
-    {
-      "src": "index.ts",
-      "use": "@vercel/node"
+    "api": {
+      "root": "server",
+      "framework": "express",
+      "entrypoint": "src/index.ts",
+      "installCommand": "cd .. && npm ci",
+      "buildCommand": "npm run db:vercel"
     }
-  ],
-  "routes": [
+  },
+  "rewrites": [
     {
-      "src": "/api/(.*)",
-      "dest": "/index.ts?route=/api/$1"
+      "source": "/api/(.*)",
+      "destination": { "service": "api" }
     },
     {
-      "handle": "filesystem"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/index.html"
+      "source": "/(.*)",
+      "destination": { "service": "web" }
     }
   ]
 }
