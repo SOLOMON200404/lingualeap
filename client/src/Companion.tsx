@@ -2,19 +2,8 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Apple, Sparkles } from 'lucide-react';
 import { PetAvatar, petAbility } from './PetArt';
+import { api } from './api';
 import './pet.css';
-
-const API = import.meta.env.VITE_API_URL || '/api';
-async function api(path: string, options: RequestInit = {}) {
-  const response = await fetch(API + path, {
-    credentials: 'include',
-    headers: { 'Content-Type': 'application/json', ...options.headers },
-    ...options,
-  });
-  const data = await response.json();
-  if (!response.ok) throw new Error(data.error || 'Could not update your companion.');
-  return data;
-}
 
 export default function Companion() {
   const [pet, setPet] = useState<any>();

@@ -2,18 +2,7 @@ import { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { ArrowRight, Heart, Volume2, Apple } from 'lucide-react';
 import { PetAvatar, petAbility } from './PetArt';
-
-const API = import.meta.env.VITE_API_URL || '/api';
-async function api(path: string, options: RequestInit = {}) {
-  const response = await fetch(API + path, {
-    credentials: 'include',
-    headers: { 'Content-Type': 'application/json', ...options.headers },
-    ...options,
-  });
-  const data = await response.json();
-  if (!response.ok) throw new Error(data.error || 'Something went wrong. Please try again.');
-  return data;
-}
+import { api } from './api';
 
 function say(text: string, lang: string, setError: (error: string) => void) {
   if (!('speechSynthesis' in window)) { setError('Audio is not available in this browser.'); return; }
